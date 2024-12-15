@@ -2,6 +2,7 @@ import './App.css';
 import HelloWorld from './components/HelloWorld';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
+import Frase from './components/Frase';
 
 function App() {
 
@@ -16,6 +17,9 @@ function App() {
      <h2>Estou aprendendo React</h2>
      <p>Meu nome é {newName}</p>
      <img src={url} alt={nome} />
+
+     <Frase />
+     <Frase />
 
      <HelloWorld /> 
      <SayMyName nome={nome} />
