@@ -1,32 +1,16 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/Pessoa';
-import Frase from './components/Frase';
-import List from './components/List';
+import Evento from './components/Evento';
+import Form from './components/Form';
 
 function App() {
 
-  const nome = "Cleyton"
-  const newName = nome.toUpperCase()
-
-  const url = "https:///via.placeholder.com/150"
-
   return (
     <div className="App">
-     <h1>Olá Mundo!</h1>
-     <h2>Estou aprendendo React</h2>
-     <p>Meu nome é {newName}</p>
-     <img src={url} alt={nome} />
+      <h1>Testando eventos</h1>
+      <Evento numero="1" />
+      <Evento numero="2" />
 
-     <Frase />
-     <Frase />
-
-     <List />
-
-     <HelloWorld /> 
-     <SayMyName nome={nome} />
-     <Pessoa nome="Cleyton" idade={23} profissao="Desenvolvedor" />
+      <Form />
      </div>
   );
 }
